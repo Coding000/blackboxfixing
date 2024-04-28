@@ -1,0 +1,134 @@
+<html>
+<head>
+    <title>Blackbox AI Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin:0;
+            padding:0;
+            background-color: #fffacd;
+        }
+        header {
+            background-color: #4a5a64;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        header button {
+            background-color: #4a5a64;
+            border: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+       .book {
+            background-color: #f5f5dc;
+            border: 1px solid #4a5a64;
+            margin: 10px;
+            padding: 15px;
+            width: 30%;
+        }
+        footer {
+            background-color: #4a5a64;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            background-color: #f5f5dc;
+            border: 1px solid #4a5a64;
+            margin: 10px;
+            padding: 15px;
+            width: 30%;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        fieldset {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+        datalist {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4a5a64;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button>Contact</button>
+        <button>Categories</button>
+        <button>New Arrivals</button>
+    </header>
+    <main>
+        <div class="book">
+            <img src="book1.jpg" alt="Book 1">
+            <h2>Book 1 Title</h2>
+            <p><strong>Author:</strong> Author 1</p>
+            <p><strong>Genre:</strong> Genre 1</p>
+            <p><strong>Synopsis:</strong> This is the synopsis of Book 1.</p>
+        </div>
+        <div class="book">
+            <img src="book2.jpg" alt="Book 2">
+            <h2>Book 2 Title</h2>
+            <p><strong>Author:</strong> Author 2</p>
+            <p><strong>Genre:</strong> Genre 2</p>
+            <p><strong>Synopsis:</strong> This is the synopsis of Book 2.</p>
+        </div>
+        <div class="book">
+            <img src="book3.jpg" alt="Book 3">
+            <h2>Book 3 Title</h2>
+            <p><strong>Author:</strong> Author 3</p>
+            <p><strong>Genre:</strong> Genre 3</p>
+            <p><strong>Synopsis:</strong> This is the synopsis of Book 3.</p>
+        </div>
+    </main>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="pass">
+        
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <option value="">Select a category</option>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+        </select>
+        
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search">
+        
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file">
+        
+        <input type
